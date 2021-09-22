@@ -6,6 +6,6 @@ spec:
   selector:
     app: weatherapp
   ports:
-    - port: 8080
+    - port: 4000
       targetPort: 80
   type: LoadBalancer
