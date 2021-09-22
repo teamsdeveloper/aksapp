@@ -4,7 +4,7 @@ metadata:
   name: aksapp-external-service
 spec:
   selector:
-    app: weatherapp
+    app: aksapp
   ports:
     - port: 4000
       targetPort: 80

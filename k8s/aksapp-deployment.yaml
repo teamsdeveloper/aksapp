@@ -14,7 +14,7 @@ spec:
     spec:                  
       containers: 
       - name: aksapp
-        image: teamsdeveloper/aksapp:second
+        image: teamsdeveloper/aksapp
         ports:
         - containerPort: 80
       restartPolicy: Always
