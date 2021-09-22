@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aksapp-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aksapp
+  template:
+    metadata:
+      labels: 
+        app: aksapp        
+    spec:                  
+      containers: 
+      - name: aksapp
+        image: teamsdeveloper/aksapp:second
+        ports:
+        - containerPort: 80
+      restartPolicy: Always
